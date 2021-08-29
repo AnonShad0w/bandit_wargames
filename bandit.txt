@@ -38,3 +38,7 @@ sort data.txt | uniq -u
 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 bandit 9-10
+strings data.txt | grep '='
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+bandit 10-11
