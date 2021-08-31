@@ -49,3 +49,24 @@ bandit 11-12
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
+bandit 12-13
+cp data.txt /tmp/pass_to_level13/
+cp data.txt copy.txt
+xxd copy.txt | xxd -r copy.txt > bcopy.txt
+file bcopy.txt
+mv bcopy.txt bcopy.gz
+gzip -d bcopy.gz
+file bcopy
+mv bcopy bcopy.bzip2
+bzip2 -d bcopy.bzip2
+file bcopy.bzip2.out
+mv bcopy.bzip2.out bcopy.gzip
+gzip -d bcopy.gzip
+mv bcopy.gzip bcopy.gz
+gzip -d bcopy.gz
+mv bcopy.bzip2.out bcopy.gzip
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+bandit 13-14
+ssh -i sshkey.private bandit14@localhost
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
